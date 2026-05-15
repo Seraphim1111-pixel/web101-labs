@@ -1,66 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product List</title>
-</head>
-<body>
-
-    <header>
-        <h1>My Web Store</h1>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><strong>Products</strong></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="ContactUs.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
-
-    <main>
-        <section>
-            <h2>Our Products</h2>
-
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Product ID</th>
-                        <th>Product Name</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>#101</td>
-                        <td>Wireless Mouse</td>
-                        <td>Ergonomic 2.4GHz optical tracking mouse.</td>
-                        <td>$99999</td>
-                    </tr>
-                    <tr>
-                        <td>#102</td>
-                        <td>Mechanical Keyboard</td>
-                        <td>RGB backlit keyboard with tactile switches.</td>
-                        <td>$99999</td>
-                    </tr>
-                    <tr>
-                        <td>#103</td>
-                        <td>FHD Monitor</td>
-                        <td>24-inch 1080p display with a 75Hz refresh rate.</td>
-                        <td>$99999</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-    <hr>
-
-    <footer>
-        <p>&copy; 2026 My Web Store. All rights reserved.</p>
-    </footer>
-
-</body>
+<!doctype html>
+<html>
+    <head>
+        <title>Acme Co.</title>
+    </head>
+    <body>
+        
+       <h1>Acme Co.</h1>  
+        <a href = "Home.html">Home</a>|
+        <a href = "Productlist.html">Product</a>|
+        <a href = "AboutUs.html"> About</a>|
+        <a href = "ContactUs.html"> Contact</a>
+        <hr>
+        
+        <h2>Our Products</h2>
+        <p>Browse our full catalog of carefully curated items. grouped by category.</p>
+        <table border ="1" style="border-collapse: collapse; font-family: serif;">
+            <thead>
+                <tr>
+                    <th rowspan="2">category</th>
+                    <th rowspan="2">Image</th>
+                    <th colspan="3">Product Information</th>
+                    <th rowspan="2">Price</th>
+                    <th rowspan="2">Action</th>
+                </tr>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Writing</td>
+                    <td><img src="D:\Y2 S2\WTC I\task2\image.png"alt="The notebook" width="200"></td>
+                    <td>A001</td>
+                    <td>Classic Notebook</td>
+                    <td>A5 hardcover, 160 lined pages, smooth ivory paper.</td>
+                    <td>$24.00</td>
+                    <td><a href="#">Inquire</a></td>
+                </tr>
+                <tr>
+                    <td><img src="D:\Y2 S2\WTC I\task2\pen.png" alt="the pen" width="200"></td>
+                    <td>A002</td>
+                    <td>Brass Pen</td>
+                    <td>solid brass body, refillable.develops patina with use.</td>
+                    <td>$48.00</td>
+                    <td><a href="#">Inquire</a></td>
+                </tr>
+                <tr>
+                    <Td rowspan="2">Carry</Td>
+                    <Td><img src ="D:\Y2 S2\WTC I\task2\folio.png" alt="Folio" width="200"></Td>
+                    <Td>A003</Td>
+                    <Td>Leather Folio</Td>
+                    <Td>Full-grain vagetable-tanned leather ,fits A4 documents.</Td>
+                    <Td>$120.00</Td>
+                    <Td><a herf="#">Inquire</a></Td>
+                </tr>
+                <tr>
+                    <td><img src="D:\Y2 S2\WTC I\task2\bag.png" alt="Tote" width="200"></td>
+                    <td>A004</td>
+                    <td>Canvas Tote</td>
+                    <td>Heavyweight 160z cotton canvas,reinforced stitching.</td>
+                    <td>$32.00</td>
+                    <td><a href="#">Inquire</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Desk</td>
+                    <td><img src="D:\Y2 S2\WTC I\task2\desk.png" alt="Organizer" width="200"></td>
+                    <td>A005</td>
+                    <td>Desk Organizer</td>
+                    <td>solid oak, three compartments,hand-finish oil rub.</td>
+                    <td>$85.00</td>
+                    <td><a href="#">Inquire</a></td>
+                </tr>
+                <tr>
+                    <td><img src="D:\Y2 S2\WTC I\task2\Cup.png" alt="Mug" width="200"></td>
+                    <td>A006</td>
+                    <td>Ceramic Mug</td>
+                    <td>Stoneware with matte glaze,dishwasher safe, 12oz.</td>
+                    <td>$18.00</td>
+                    <td><a href="#">Inquire</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" align="center">Summary</th>
+                    <th><strong>$327.00</strong></th>
+                    <th><strong>6 items</strong></th>
+                </tr>
+                <tr>
+                    <td colspan="7" align="center">Free shipping on orders over $100.Contact us for wholesale pricing.</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p><strong>Note:</strong>To use your own product photos,replace the src values with local paths,e.g.src="images/notebook.jpg".</p>
+        <hr>
+        <p>&copy; 2026 Acme Co.All right reserved.</p>
+    </body>
 </html>
